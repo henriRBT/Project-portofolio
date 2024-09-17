@@ -18,7 +18,7 @@
         -> Click on tab (Color Conversion)
         -> Copy the color mode (HSL)
   */
-  --hue: 230;
+  --hue: 220;
   --first-color: hsl(var(--hue), 55%, 55%);
   --first-color-light: hsl(var(--hue), 55%, 65%);
   --first-color-alt: hsl(var(--hue), 50%, 50%);
@@ -276,7 +276,7 @@ img {
 }
 
 .home_name{
-  font-size: var(--biggest-font-size);
+  font-size: 3rem;
   font-weight: var(--font-bold);
   word-break: break-word;
   margin-bottom: 1rem;
@@ -284,19 +284,10 @@ img {
 
 .home_profesion{
   position: relative;
-  font-size: var(--big-font-size);
+  font-size: 3rem;
   color: var(--text-color);
 }
 
-.home_profesion::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -.5rem;
-  width: 25%;
-  height: 3px;
-  background-color: var(--text-color);
-}
 
 .home_scroll{
   color: var(--title-color);
@@ -572,7 +563,9 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: .75rem;
 }
-
+.services_description{
+  margin-top: 2rem;
+}
 
 /*================================== Contact========================== */
 .contact_container{
@@ -609,21 +602,22 @@ img {
 }
 
 .contact_social{
+  margin-top: 1rem;
+  display: flex;
   grid-template-columns: repeat(2, max-content);
-  justify-content: center;
-  column-gap: 3rem
+  column-gap: 2rem; 
 }
 
 .contact_social-link{
   color: var(--title-color);
   display: inline-flex;
-  column-gap: .25rem;
+  column-gap: .2rem;
   align-items: center;
   transition: color .4s;
 }
 
 .contact_social-link i{
- font-size: 1.5rem;
+ font-size: 1.3rem;
 }
 
 .contact_social-link span{
